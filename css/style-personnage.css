@@ -1,0 +1,225 @@
+/*Polices personnalisées*/
+@font-face {
+    font-family: 'lucien_schoenschriftv_catRg';
+    src: url('polices/Lucian Schoenschrift CAT-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gondola_sdregular';
+    src: url('polices/Gondola_SD-webfont.woff') format('woff'),;
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gondola_sd_-_swashregular';
+    src: url('polices/Gondola_SD-Swash-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gothic_ultra_otregular';
+    src: url('polices/gothic_ultra_ot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'balooregular';
+    src: url('polices/Baloo-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*éléments principaux*/
+html
+{
+    background: url("../Images/Azuria3.0_35K.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+body
+{
+    font-family: 'balooregular';
+    font-weight: 500;
+}
+
+html:after {
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: hsla(180,0%,50%,0.25);
+    pointer-events: none;
+}
+
+#container
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*En tête*/
+header
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0;
+}
+
+#princapl-title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo img
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+header h1
+{
+    font-family: 'lucien_schoenschriftv_catRg';
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0 10px;
+    color: rgb(255, 255, 255);
+}
+
+header h2
+{
+    font-family: 'gothic_ultra_otregular';
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/*Menu*/
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li
+{
+    margin-right: 2px;
+}
+
+nav a
+{
+    font-size: 0.7rem;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-shadow: 0 1px 1px #1c1a19;
+    transition: 0.5;
+}
+
+nav a:hover
+{
+    color: indianred;
+    border-radius: 3px solid indianred;
+}
+
+/*bannière*/
+#img-banner
+{
+    margin: 15px 0;
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    background: url("../Images/groupe.jpg") no-repeat top;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+}
+
+#desc-banner
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.4%;
+    height: 1rem;
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color: rgba(24,24,24,0.8);
+    color: ivory;
+    font-size: 0.5em;
+}
+
+/*Corps*/
+main {
+    flex-grow: 1;
+}
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: rgba(146, 145, 145, 0.8);
+    padding: 5px 10px;
+    flex-direction: column;
+    width: auto;
+}
+
+
+article
+{
+    text-align: justify;
+    font-size: 0.6em;
+    line-height: 1.1;
+    margin: 10px 0;
+    width: 90%;
+}
+
+
+
+article p
+{
+    color: #181818;
+    font-weight: 500;
+    margin: 10px 0;
+    
+}
+
+.personnage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.personnage img
+{
+    display: block;
+    margin: auto;
+    padding: auto;
+    height: 150px;
+    width: auto;
+}
