@@ -235,7 +235,7 @@ aside
     color: white;
 }
 
-aside h1
+aside h2
 {
     margin: 2px 0;
     font-size: 0.8rem;
@@ -379,7 +379,7 @@ aside h1
         height: auto;
     }
 
-    aside h1
+    aside h2
     {
         margin-bottom: 10px;
         font-weight: bold;
@@ -505,7 +505,7 @@ aside h1
         height: 400px;
     }
 
-    aside h1
+    aside h2
     {
         margin: 20px 0;
     }

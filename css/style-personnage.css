@@ -221,5 +221,207 @@ article p
     margin: auto;
     padding: auto;
     height: 150px;
-    width: auto;
+}
+
+
+
+@media screen and (min-width:768px) {
+    #container
+    {
+        width: 60%;
+        margin: auto;
+    }
+
+    /*En tête*/
+
+
+    #logo
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #logo img
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    header h1
+    {
+        font-size: 2em;
+
+    }
+
+    header h2
+    {
+        font-size: 1.3em;
+    }
+
+    /*Menu*/
+    nav ul
+    {
+        list-style-type: none;
+        display: flex;
+        margin-top: 10px;
+    }
+
+
+    nav li
+    {
+        margin-right: 20px;
+    }
+
+    nav a
+    {
+        font-size: 0.8rem;
+    }
+
+
+    /*bannière*/
+    #img-banner
+    {
+        height: 175px;
+        margin-bottom: 25px;
+    }
+
+    #desc-banner
+    {
+        width: 99.1%;
+        height: 0.9rem;
+        padding-top: 8px;
+        padding-left: 4px;
+        font-size: 0.8em;
+    }
+
+    section
+    {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .personnage 
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .old-personnage article
+    {
+        height: 350px;
+    }
+
+    article
+    {
+        font-size: 0.8rem;
+        width: 45%;
+        height: 375px;
+    }
+
+    article p
+    {
+        margin: 10px;
+    }
+
+    .personnage img
+    {
+    display: block;
+    margin: 0 auto;
+    height: 165px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #container
+    {
+        width: 900px;
+        margin: auto;
+    }
+    
+    /*En tête*/
+    header
+    {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    
+    #logo
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #logo img
+    {
+        width: 50px;
+        height: 50px;
+    }
+    
+    header h1
+    {
+        font-size: 2.5em;
+    }
+    
+    header h2
+    {
+        font-size: 1.5em;
+    }
+    
+    /*Menu*/
+    nav ul
+    {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav li
+    {
+        margin-right: 20px;
+    }
+    
+    nav a
+    {
+        font-size: 1.3em;
+    }
+    
+    nav a:hover
+    {
+        color: indianred;
+        border-radius: 3px solid indianred;
+    }
+    
+    /*bannière*/
+    #img-banner
+    {
+        height: 300px;
+    }
+    
+    #desc-banner
+    {
+        width: 99.5%;
+        height: 33px;
+        padding-top: 15px;
+        padding-left: 4px;
+    }
+    
+    /*Corps*/ 
+   
+
+    
+    article
+    {
+        line-height: 1.2;
+        font-size: 0.85rem;
+        margin: 0 10px;
+        width: 30%;
+        margin-top: 20px;
+    }
+    
+   
+    
+
 }
